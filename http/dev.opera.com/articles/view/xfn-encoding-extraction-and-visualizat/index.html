@@ -165,19 +165,19 @@ _gaq.push(['_trackPageview']);
 
 <p>So lets take for example, Chris Mills, the editor of my article. He has an author bio on <a href="../../../index.html">dev.opera.com</a>, so we can use <a href="../../../author/chrismills.html">this link</a>:</p>
 
-<pre><code>&lt;a href=&quot;http://dev.opera.com/author/974138&quot; <strong>rel</strong>=&quot;&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href=&quot;../../../author/974138&quot; <strong>rel</strong>=&quot;&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
 
 <p>Now that I have my basic structure, I need to put in the appropriate values for my relationship with Chris. If I just start at the left of the XFN list and work across, I can see what values I can use. The first category is <em>Friendship</em>, which describes the level of friendliness Chris and I have. I know how to contact Chris, so <code>contact</code> is certainly appropriate. For most people this might be the maximum relationship possible, but I know Chris better than that, so I could use <code>acquaintance</code>. I have also worked with Chris before on other projects and met him on several occasions such as SxSWi and d.Construct, and we have chatted over several beverages, so I think <code>friend</code> is the most suitable description. Some people reserve the term <code>friend</code> for people whom they would let watch their children, some people are friends with someone they simply met for 5 minutes or admire. In the friendship category, it is possible to only have one value, so I would mark Chris as a <code>friend</code>. The term <code>friend</code> is often symmetrical, meaning that if I consider Chris a friend, it is likely that he considers me a friend too, but that is not required. Chris could be much more strict about his definition of <code>friend</code> and only consider the few people on his Christmas card list worthy of that value. The definition of <code>friend</code> is open for interpretation and will change with context and time. Since the <em>Friendship</em> category can only have one value at most, I selected the highest fidelity relationship, <code>friend</code>.</p>
 
-<pre><code>&lt;a href=&quot;http://dev.opera.com/author/974138&quot; rel=&quot;<strong>friend</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href=&quot;../../../author/974138&quot; rel=&quot;<strong>friend</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
 
 <p>The next category is <em>Physical</em>. The only option is <code>met</code>, and I have met Chris on several occasions, so I can add that to the <code>rel</code> value as well.</p>
 
-<pre><code>&lt;a href=&quot;http://dev.opera.com/author/974138&quot; rel=&quot;friend <strong>met</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href=&quot;../../../author/974138&quot; rel=&quot;friend <strong>met</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
 
 <p>The order of the XFN values is not important; just the fact that they are space separated means that all of these apply. The next category is <em>Professional</em>. These describe a few professional relationships that you could have had with people. Both Chris and I work in the same field and write for <a href="../../../index.html">dev.opera.com</a>, so I would say that he is a <code>colleague</code>. The other option is <code>co-worker</code>, but we don&#39;t both work for the same company, so I probably wouldn&#39;t use that. Both of these professional values are symmetric, so if I am a co-worker of Chris&#39; then he is also a co-worker of mine, and the same for colleague - if we both work in the same field/area then we both should consider each other colleagues.</p>
 
-<pre><code>&lt;a href=&quot;http://dev.opera.com/author/974138&quot; rel=&quot;friend met <strong>colleague</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
+<pre><code>&lt;a href=&quot;../../../author/974138&quot; rel=&quot;friend met <strong>colleague</strong>&quot;&gt;Chris Mills&lt;/a&gt;</code></pre>
 
 <p>In the rest of the categories, I don&#39;t find any matches for Chris, so I don&#39;t need to add any more values to my <code>rel</code> attribute.</p>
 
